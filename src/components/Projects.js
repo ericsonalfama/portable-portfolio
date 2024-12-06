@@ -45,7 +45,7 @@ export default function Projects({ color }) {
           <Stack align="center" direction="row" p={4}>
             <HStack mx={4}>
               <Text color={`${color}.400`} fontWeight={800}>
-                03
+                02
               </Text>
               <Text fontWeight={800}>Projects</Text>
             </HStack>
@@ -69,7 +69,7 @@ export default function Projects({ color }) {
 
                       <Text py={2}>{project.description}</Text>
 
-                      <HStack py={2}>
+{/*                       <HStack py={2}>
                         {project.buttons.map((button) => (
                           <a key={button.text} href={button.href}>
                             <Button color={`${color}.400`}>
@@ -77,8 +77,8 @@ export default function Projects({ color }) {
                             </Button>
                           </a>
                         ))}
-                      </HStack>
-                      <HStack pt={4} spacing={2}>
+                      </HStack> */}
+{/*                       <HStack pt={4} spacing={2}>
                         {project.badges.map((badge) => (
                           <Badge
                             key={badge.text}
@@ -87,7 +87,7 @@ export default function Projects({ color }) {
                             {badge.text}
                           </Badge>
                         ))}
-                      </HStack>
+                      </HStack> */}
                     </CardBody>
                   </Stack>
                 </Card>
@@ -130,7 +130,7 @@ export default function Projects({ color }) {
                     <Stack>
                       <CardBody align="left" h={[null, "40vh"]}>
                         <Heading size="sm">{other.name}</Heading>
-
+                        <Image objectFit="cover" src={other.image} />
                         <Text fontSize="sm" py={2}>
                           {other.description}
                         </Text>
@@ -146,7 +146,7 @@ export default function Projects({ color }) {
                             </Link>
                           ))}
                         </HStack>
-                        <HStack flexWrap="wrap" pt={4} spacing={2}>
+                        {/* <HStack flexWrap="wrap" pt={4} spacing={2}>
                           {other.badges.map((badge) => (
                             <Badge
                               my={2}
@@ -156,7 +156,7 @@ export default function Projects({ color }) {
                               {badge.text}
                             </Badge>
                           ))}
-                        </HStack>
+                        </HStack> */}
                       </CardBody>
                     </Stack>
                   </Card>
